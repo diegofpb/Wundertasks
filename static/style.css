@@ -1,0 +1,184 @@
+.ui-window-content{
+  width: 100%;
+  height: ~'calc(100% - 51px)';
+}
+
+.ui-header{
+  height: 50px;
+  background-image: none;
+}
+
+.ui-header-buttons{
+  margin-top: 4px;
+}
+
+.ui-header .arrow{
+  width: 28px;
+  height: 28px;
+  float: left;
+  margin-left: 8px;
+  margin-top: 10px;
+  margin-right: 6px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+.ui-header .arrow i{
+  width: 16px;
+  height: 16px;
+  background-image: url('@static/assets/arrow.png');
+  background-size: 16px 16px;
+  display: none;
+  background-repeat: no-repeat;
+  margin: 6px;
+}
+
+.ui-header .youtube-logo{
+  width: 71px;
+  height: 30px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+
+.ui-header .youtube-logo i{
+  width: 71px;
+  height: 30px;
+  background-image: url('@static/assets/logo.png');
+  background-size: 71px 30px;
+  display: inline-block;
+}
+
+.ui-header .ui-input-search{
+  float: left;
+  margin-top: 5px;
+  border: 1px solid transparent;
+}
+
+.ui-header .ui-input-search .search-icon, .ui-header .ui-input-search.active .search-icon{
+  border-right: none;
+  border-left: 1px solid #ccd3d5;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  margin: 5px 10px 0px 0px;
+}
+
+.ui-header .ui-input-search .search-icon i, .ui-header .ui-input-search.active .search-icon i{
+  background-image: url('@static/assets/search-red.png');
+  background-size: 16px 16px;
+  background-position: 0px 0px;
+}
+
+.ui-header .ui-input-search.active{
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+
+.ui-header.playing .arrow i{
+  display: inline-block;
+}
+
+.ui-header.playing .arrow:hover{
+  border: 1px solid #c2cacd;
+}
+
+.ui-window-content .list-screen{
+  background-color: #f6f7f9;
+  width: 100%;
+  height: 100%;
+}
+
+.ui-window-content .video-list{
+  margin: 13px;
+  width: ~'calc(100% - 66px)';
+  display: inline-block;
+  -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+	box-shadow: 0 1px 4px rgba(0,0,0,.2);
+  padding: 20px 20px 0px 20px;
+}
+
+.video-item{
+  height: 112px;
+  margin-bottom: 20px;
+}
+
+.video-item .thumbnail{
+  width: 200px;
+  height: 112px;
+  float: left;
+}
+
+.video-item .thumbnail figure{
+  width: 100%;
+  height: 100%;
+}
+
+.video-item .thumbnail i{
+  width: 100%;
+  height: 100%;
+  background-size: 200px 112px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.video-item .video-info{
+  float: left;
+  height: 100%;
+  margin-left: 10px;
+  width: ~'calc(100% - 210px)';
+}
+
+.video-item .title{
+  cursor: pointer;
+  color: #167ac6;
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.video-item .channel{
+  color: #167ac6;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.video-item .date{
+  font-size: 13px;
+  float: left;
+  margin-right: 10px;
+}
+
+.video-item .visitors{
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.video-item .description{
+  font-size: 13px;
+}
+
+.playing-screen{
+  background-color: black;
+  width: 100%;
+  height: ~'calc(100% - 51px)';
+  position: absolute;
+  right: -100%;
+  bottom: 0px;
+  display: none;
+}
+
+.playing-screen.active{
+  display: block;
+}
+
+iframe{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
