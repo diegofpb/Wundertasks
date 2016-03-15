@@ -33,7 +33,7 @@
 	
 	<section class="ui-window-content">
 			
-		<section class="ui-input-search">
+		<section class="wl-newtask ui-input-search">
 			<figure class="search-icon">
 				<i></i>
 			</figure>
@@ -42,11 +42,20 @@
 			<i></i>
 			</figure>
 		</section>
-		
-		<section class="list-element">
-			<figure class="ui-checkbox"><i></i></figure>
-			<span>Tarea 1</span>
-		</section>
+		<ul class="wl-tasklist">
+			<li class="wl-task wl-active">
+				<figure class="wl-taskdone ui-checkbox"><i></i></figure>
+				<span class="wl-tasktext">Tarea 1</span>
+				<figure class="wl-taskdelete"><i></i></figure>
+			</li>
+			
+			<li class="wl-task wl-complete">
+				<figure class="wl-taskdone ui-checkbox"><i></i></figure>
+				<span class="wl-tasktext">Tarea 1</span>
+				<figure class="wl-taskdelete"><i></i></figure>
+			</li>
+			
+		</ul>
 		
 	</section>
 
