@@ -1,10 +1,4 @@
-.ui-header{
-  height: 50px;
-}
-
-.ui-header-buttons{
-  margin-top: 4px;
-}
+@import '@static/font-awesome-4.5.0/css/font-awesome.css';
 
 .ui-header .wunder-logo{
   width: 71px;
@@ -31,4 +25,28 @@
 .ui-input-search{
 	margin:	5px;
 	width:	calc(100% - 2%);
+}
+
+.ui-input-search.active {
+	border-color:		#CE7447!important;
+}
+
+.addtask {
+	margin:5px;
+	width:94%;
+
+	position: relative;
+    top: 382px;
+
+/*
+    position:absolute;
+    bottom: 0;
+*/
+}
+
+.ui-navgroup-title-txt {
+    float: left;
+    font-size: 14px;
+    font-family: 'Lato';
+    color: #868c8e;
 }
