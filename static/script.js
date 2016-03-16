@@ -8,6 +8,7 @@ var newId = 0;
 function newTask(task) {
   tasks.push({id: newId, text:task, done:false, exist:true});
   newId++;
+  render();
 }
 
 /**
@@ -49,8 +50,10 @@ $('.wl-newtask input').keydown(function(event){
 	console.log(event);
 });
 
+
+
 function render() {
-  var ulNode = $('#wl-tasklist');
+  var ulNode = $('.wl-tasklist');
 
   // Vaciar task-list
   ulNode.html('');
@@ -67,7 +70,7 @@ function render() {
     var checkboxNode = $('<figure></figure>')
       .attr('task-id', item.id)
       .addClass('wl-taskdone')
-      .addClass('ui-checkbox')
+	  .addClass('ui-checkbox')
       .addClass(item.done ? 'active' : '')
       .change(function(event) {
         var task = parseInt($(event.target).attr('task-id'), 10);
@@ -96,6 +99,10 @@ function render() {
       .append(buttonNode);
 
     ulNode.append(liNode);
+    
+      // Añade badge numerico.
+	  wz.app.setBadge( tasks.length );
+
   });
 }
 
@@ -114,8 +121,24 @@ function init() {
   newTask('Soy una tarea completada');
   setDone(0, true);
   newTask('Y yo una sin completar');
+  newTask('Y yo otra sin completar');
+  
+  
+  var user = wz.system.user().name;
 
+  var banner = wz.banner();
+  banner.setTitle('¡Bienvenido de nuevo '+user+'!');
+  banner.setTimeout( 50000 );
+  banner.setText('Wundertasks se está preparando...');
+  banner.setIcon( 'https://static.inevio.com/app/340/icon.png' )
+  banner.setButton( 1, 'Ocultar', 'normal' )
+  banner.render();
+  console.log(tasks);
   render();
 }
 
 init();
+
+$( ".ui-close" ).on( "click", function() {
+  wz.app.setBadge( 0 );
+});
