@@ -1,0 +1,8 @@
+{
+
+    "addTask"  			: "INSERT INTO tasks SET user = @userId, title = ?, done = ?",
+    "removeTask"    	: "DELETE FROM tasks WHERE user = @userId AND id = ? LIMIT 1",
+    "updateTask"    	: "UPDATE tasks SET done = ? WHERE user = @userId AND id = ? LIMIT 1",
+    "getTasks"    		: "SELECT * FROM tasks WHERE user = @userId"
+
+}
