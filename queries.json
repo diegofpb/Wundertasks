@@ -1,20 +1,8 @@
 {
 
-    "addTask"  				: "INSERT INTO tasks SET user = @userId, title = ?, done = ?",
-    "removeTask"    		: "DELETE FROM tasks WHERE user = @userId AND id = ? LIMIT 1",
-    "updateTask"    		: "UPDATE tasks SET done = ? WHERE user = @userId AND id = ? LIMIT 1",
-    "getTasks"    			: "SELECT * FROM tasks WHERE user = @userId",
-    
-    "addTaskToList"  		: "INSERT INTO tasks SET user = @userId, title = ?, done = ?, list = ?",
-    "removeTaskFromList"    : "DELETE FROM tasks WHERE user = @userId AND id = ? AND list = ? LIMIT 1",
-    "updateTasFromList"    	: "UPDATE tasks SET done = ? WHERE user = @userId AND id = ? AND list = ? LIMIT 1",
-    "getTasksFromLists"		: "SELECT * FROM tasks WHERE user = @userId AND list = ?",
-    "removeAllTasksFromList"	: "DELETE FROM tasks WHERE user = @userId AND list = ? LIMIT 1",
-    
-    
-    "addList"    			: "INSERT INTO lists SET user = @userId, title = ?, description = ?",
-    "removeList"    		: "DELETE FROM lists WHERE user = @userId AND id = ? LIMIT 1",
-    "getLists"    			: "SELECT * FROM lists WHERE user = @userId"
-    
+    "addTask"  			: "INSERT INTO tasks SET user = @userId, title = ?, done = ?",
+    "removeTask"    	: "DELETE FROM tasks WHERE user = @userId AND id = ? LIMIT 1",
+    "updateTask"    	: "UPDATE tasks SET done = ? WHERE user = @userId AND id = ? LIMIT 1",
+    "getTasks"    		: "SELECT * FROM tasks WHERE user = @userId"
 
 }

@@ -53,7 +53,7 @@
                     },
 
                     "css"    : ["style.css"],
-                    "script" : ["script.js", "connect.js"],
+                    "script" : ["script.js"],
                     "start"  : []
 
                 }
@@ -62,7 +62,11 @@
 
     },
     "permission" : {
-        "service": true,
-        "popup" : true
+
+
+        "service": true
+
     }
+    
+
 }

@@ -16,22 +16,6 @@
   display: inline-block;
 }
 
-
-.task-icon i{
-
-    width: 13px;
-    height: 13px;
-    float: left;
-    background-size: 87px 39px;
-    background-image: url('@static/assets/assignment_white@2x.png');
-    background-repeat: no-repeat;
-    display: inline-block;
-}
-
-
-
-
-
 /*
 .color-lists{
 	background-color: 		#F7736A!important;
@@ -51,48 +35,12 @@
 }
 */
 
-.wl-sidebar {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-.wl-tordo {
+.addtask {
   margin:5px;
   width:94%;
 
   position: absolute;
-  bottom: 60px;
-  left: 0;
-
-}
-
-.wl-cacota {
-  margin:5px;
-  width:94%;
-
-  position: absolute;
-  bottom: 90px;
-  left: 0;
-
-}
-
-.addlist {
-  margin:5px;
-  width:94%;
-
-  position: absolute;
-  bottom: 30px;
-  left: 0;
-
-}
-
-.wl-connect {
-  margin:5px;
-  width:94%;
-
-  position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
 
 }
@@ -119,7 +67,6 @@
     font-family: 'Lato';
     color: #555;
 }
-
 
 .wl-task{
 	border-bottom: solid 1px #EEE;
@@ -159,43 +106,19 @@
 	text-decoration: line-through;
 }
 
+.task-icon i{
 
-
-.welcome-page .welcome-first{
+    width: 13px;
+    height: 13px;
     float: left;
-    color: #545f65;
-    font-size: 61px;
-    margin-top: 180px;
-    font-weight: lighter;
-    margin-top: 180px;
-    text-align: center;
-    width: 100%;
+    background-size: 87px 39px;
+    background-image: url('@static/assets/assignment_white@2x.png');
+    background-repeat: no-repeat;
+    display: inline-block;
 }
 
-.welcome-page i{
-  float: left;
-  height: 1px;
-  width: 500px;
-  background-color: #e1e5e7;
-  margin-left: ~'calc(50% - 500px/2)';
-  margin-bottom: 25px;
-  margin-top: 30px;
-}
-
-.welcome-page .welcome-second{
-  float: left;
-  color: #889399;
-  font-size: 19px;
-  text-align: center;
+.wl-sidebar {
+  position: relative;
+  height: 100%;
   width: 100%;
-}
-
-.welcome-page .ui-btn.big{
-  margin-left: ~'calc(50% - 225px/2)';
-  width: 225px;
-  margin-top: 90px;
-}
-
-.welcome-page .ui-btn.big span{
-  max-width: 200px;
 }
