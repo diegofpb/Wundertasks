@@ -33,13 +33,13 @@
 
                     "template" : "main.html",
 
-                    "maxizable" : true,
+                    "maxizable" : false,
                     "resizable" : true,
 
                     "width"  : {
 
-                        "default" : 864,
-                        "min"     : 864,
+                        "default" : 800,
+                        "min"     : 800,
                         "max"     : 0
 
                     },
@@ -53,13 +53,20 @@
                     },
 
                     "css"    : ["style.css"],
-                    "script" : ["script.js"],
+                    "script" : ["script.js", "intro.js"],
                     "start"  : []
 
                 }
             }
         }
 
+    },
+    "permission" : {
+
+
+        "service": true
+
     }
+    
 
 }

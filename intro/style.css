@@ -1,4 +1,4 @@
-@import '@static/font-awesome-4.5.0/css/font-awesome.css';
+﻿@import '@static/font-awesome-4.5.0/css/font-awesome.css';
 
 .ui-header .wunder-logo{
   width: 71px;
@@ -24,6 +24,11 @@
 }
 */
 
+.ui-input-search{
+	margin:	5px;
+	width:	calc(100% - 2%);
+}
+
 /*
 .ui-input-search.active {
 	border-color:		#CE7447!important;
@@ -31,12 +36,11 @@
 */
 
 .addtask {
-  margin:5px;
-  width:94%;
+	margin:5px;
+	width:94%;
 
-  position: absolute;
-  bottom: 0px;
-  left: 0;
+	position: relative;
+    top: 380px; /*380px solo con 1 lista. Hay que restar 30px por cada lista añadida.*/
 
 }
 
@@ -54,35 +58,14 @@
 }
 */
 
-.wl-window {
-  position: relative;
-}
-
 .wl-tasklist {
 	margin:	5px;
 	width:	98%;
-  height: 98%;
-  padding-top: 40px;
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: 'Lato';
-  color: #555;
+    height: 38px;
+    font-size: 16px;
+    font-family: 'Lato';
+    color: #555;
 }
-
-.wl-newtask {
-  margin: 5px;
-  width:  calc(100% - 2%);
-  position: absolute;
-  z-index: 1;
-  box-sizing: border-box;
-  height: 40px;
-}
-
-.wl-newtask input {
-  font-size: 16px;
-  height: 24px;
-}
-
 
 .wl-task{
 	border-bottom: solid 1px #EEE;
@@ -122,25 +105,6 @@
 	text-decoration: line-through;
 }
 
-.task-icon i{
-    display: none;
-    /*width: 13px;
-    height: 13px;
-    float: left;
-    background-size: 87px 39px;
-    background-image: url('@static/assets/assignment_white@2x.png');
-    background-repeat: no-repeat;
-    display: inline-block;*/
-}
-
-.wl-sidebar {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-
-
 .welcome-page {
     float: left;
     position: absolute;
@@ -150,7 +114,15 @@
     height: ~'calc(100% - 41px)';
     top: 42px;
     display: none;
-    opacity: 1;
+    opacity: 0;
+    animation: welcome-page-in 0.5s forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes welcome-page-in{
+    0%{  opacity: 0;}
+    100%{ opacity: 1; }
 }
 
 .welcome-page .welcome-first{
