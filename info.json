@@ -8,8 +8,8 @@
 
     "language" : {
 
-        "default" : "en-en",
-        "list"    : [ "en-en" ]
+        "default" : "es-es",
+        "list"    : [ "es-es", "en-en" ]
 
     },
 
