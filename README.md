@@ -5,10 +5,14 @@ Un gestor de tareas para Inevio.
 
 Version 1.0 (17-03-2016)
 
-[ok] Única lista de tareas para cada usuario de Inevio.
+- [x] Única lista de tareas para cada usuario de Inevio.
 
-[--] Múltiples listas de tareas para cada usuario de Inevio.
+- [ ] Múltiples listas de tareas para cada usuario de Inevio.
 
-[--] Listas de tareas colaborativas entre usuarios de Inevio.
+- [ ] Listas de tareas colaborativas entre usuarios de Inevio.
 
-[--] Integración con tareas de Wunderlist.
+- [ ] Integración con tareas de Wunderlist.
+
+
+[Inevio]: https://www.inevio.com/
+[Wunderlist]: https://www.wunderlist.com/
