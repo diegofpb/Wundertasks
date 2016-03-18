@@ -1,7 +1,11 @@
 {
 
-    "welcomeTitle" : "Bienvenido a Wundertask",
+    "welcomeTitle" : "Bienvenido a Wundertasks",
     "welcomeSubtitle" : "para inevio",
-    "welcomeLogin" : "Empezar"
+    "welcomeLogin" : "Empezar",
+    "listTitle" : "Tus listas",
+    "inbox" : "Bandeja de entrada",
+    "newList" : "Nueva lista",
+    "newTask" : "Añadir tarea..."
 
 }

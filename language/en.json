@@ -2,6 +2,10 @@
 
     "welcomeTitle" : "Welcome to Wundertask",
     "welcomeSubtitle" : "for inevio",
-    "welcomeLogin" : "Start"
+    "welcomeLogin" : "Start",
+    "listTitle" : "Your lists",
+    "inbox" : "Inbox",
+    "newList" : "New list",
+    "newTask" : "Add task..."
 
 }
